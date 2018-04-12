@@ -4,4 +4,4 @@
 
 3. Wrap everything else in test.py so as to generate the plot of this dataset.
 
-![](/images/result.png)
+<br>![](/images/result.png)</br>
