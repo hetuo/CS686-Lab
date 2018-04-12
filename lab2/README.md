@@ -4,4 +4,4 @@
 
 3. Wrap everything else in test.py so as to generate the plot of this dataset.
 
-![image](https://github.com/hetuo/CS686-Lab/new/master/lab2/images/result.png)
+![alt text](https://github.com/hetuo/CS686-Lab/lab2/images/result.png)
