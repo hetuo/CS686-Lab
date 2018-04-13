@@ -28,7 +28,7 @@ class svm_basic(classifier):
         b, alphas = smoPK(Xin, Yin, 0.6, 0.001, 40)
         weights = calcWs(alphas, Xin, Yin)
         weightArray = [b.getA()[0][0], weights[0][0], weights[1][0]]
-        self.Weights = weightArray
+        self.weights = weightArray
         return weightArray
         
         
@@ -37,9 +37,9 @@ class svm_basic(classifier):
     def predict(self, X):
         hypotheses = []
         for x in X:
-            prob = self.sigmoid(sum(x*self.weights))
-            if prob > 0.5:
+            prob = self.weights[0] + self.weights[1] * x[0] + self.weights[2] * x[1]
+            if prob > 0:
                 hypotheses.append(1)
             else:
-                hypotheses.append(0)
+                hypotheses.append(-1)
         return hypotheses
